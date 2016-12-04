@@ -9,14 +9,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MainController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String printMainPage(){
+    public String printMainPage() {
         return "main";
     }
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     @ResponseBody
-    public String printWithAjax(){
-        String string = "Hello World!!!!!";
+    public String printWithAjax() {
+        String string = "Hello AJAX!!!!!";
         return string;
     }
+
 }
